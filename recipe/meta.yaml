@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8.1
+    - python >=3.8.1,<4.0.0
     - pip
     - poetry-core
   run:
-    - python >=3.8.1
+    - python >=3.8.1,<4.0.0
     - plotext >=5.2.8,<6.0.0
-    - textual >=0.86.2
+    - textual >=0.86.2,<0.87.0
 
 test:
   requires:
