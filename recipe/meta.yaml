@@ -1,5 +1,5 @@
 {% set name = "textual-plotext" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/textual_plotext-{{ version }}.tar.gz
-  sha256: 6e8e608ca9da52b4f171fa4adb0e80cbcd8e668f1334e9e4d7fbfd064d393a4f
+  sha256: 836f53a3316756609e194129a35c2875638e7958c261f541e0a794f7c98011be
 
 build:
   noarch: python
