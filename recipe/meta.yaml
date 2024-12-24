@@ -11,22 +11,23 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.8.1,<4.0.0
+    - python {{ python_min }}
     - pip
     - poetry-core
   run:
-    - python >=3.8.1,<4.0.0
+    - python >={{ python_min }},<4.0.0
     - plotext >=5.2.8,<6.0.0
     - textual >=0.86.2
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
   imports:
